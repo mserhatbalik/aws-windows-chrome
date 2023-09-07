@@ -4,9 +4,13 @@
 
 # State files
 terraform/*.tfstate.*
+terraform.tfstate
+terraform.tfstate.backup
 
 # Variable files
 # terraform/*.tfvars
 
 .terraform.lock.hcl
 ~/.terraform.lock.hcl
+
+key.txt

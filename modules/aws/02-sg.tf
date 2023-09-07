@@ -9,7 +9,7 @@ module "public_bastion_security_group" {
   vpc_id      = module.vpc.vpc_id
 
   # Ingress Rules. 22-80-443 Portunu tüm internetten inbound şekilde kabul ediyoruz. Preset rulelar modülün sayfasındaki "inputs" kısmında yazıyor.
-  ingress_rules = ["ssh-tcp", "http-80-tcp", "https-443-tcp"]
+  ingress_rules = ["ssh-tcp", "http-80-tcp", "https-443-tcp", "rdp-tcp", "rdp-udp"]
   ingress_cidr_blocks = ["0.0.0.0/0"]
 
   # Egress Rules. Bastion hostundan tüm internete ve iç network VPC'ye tüm portlar üzerinden outbound erişim izni veriyoruz.

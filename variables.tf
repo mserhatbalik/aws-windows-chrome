@@ -30,6 +30,11 @@ variable "aws_ssh_key" {
   default = "/home/serhat/.ssh/id_rsa.pub"
 }
 
+variable "aws_ssh_key_private" {
+  type = string
+  default = "/home/serhat/.ssh/id_rsa"
+}
+
 variable "aws_ec2_instance_image" {
   type = string
   # default = "ami-0d527b8c289b4af7f"
